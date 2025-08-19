@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tabela ilegal</title>
+
+  <!-- Import map: mapeia 'three' para o CDN (necessário para OrbitControls/GLTFLoader) -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand">TABELA DE PREÇOS</div>
+    <div class="userbox">
+      <div class="usertext">
+        <div class="username" id="username">TABELA ILEGAL</div>
+        <div class="money" id="money">Complexo RJ</div>
+      </div>
+      <div class="avatar" title="Perfil"></div>
+    </div>
+  </div>
+
+  <div class="page">
+    <aside class="panel sidebar">
+      <div class="title">CATEGORIA</div>
+      <div class="categories" id="categoryBar"></div>
+      <div class="items" id="itemList"></div>
+    </aside>
+
+    <section class="panel details">
+      <div class="details-top">
+        <div><div class="big-title" id="detailTitle">Selecione um item</div></div>
+        <div class="levelbox">
+          <div class="ring" id="levelRing" style="--p:0"></div>
+          <div class="leveltxt">
+            <b>COMPLEXO RJ <span id="levelLabel">SEASON 9</span></b>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="preview" id="preview">
+        <div class="placeholder">Escolha um item na lista ao lado</div>
+      </div>
+
+      <div class="reqs">
+        <div class="reqs-header">ESTEJA ATENTO AO VALOR QUE FOR VENDER, VENDAS ABAIXO DO VALOR PERMITIDO RESULTAM EM WIPE DA CONTA!</div>
+        <div class="grid" id="reqGrid"></div>
+      </div>
+
+      <div class="prices panel-lite">
+        <div class="price-row"><div class="price-label">Com Parceria</div><div class="price-value" id="priceWith">—</div></div>
+        <div class="price-row"><div class="price-label">Sem Parceria</div><div class="price-value" id="priceWithout">—</div></div>
+      </div>
+
+      <div class="cta">
+        <div class="meta2">
+          <div>Nome do produto: <b id="productName">—</b></div>
+          <div id="craftTime">SEASON 9</div>
+        </div>
+        <div class="buttons">
+          <button class="btn primary" id="craftBtn" disabled>CPX</button>
+          <button class="btn secondary" id="queueBtn"> RJ</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <aside class="drawer" id="drawer">
+    <div class="title" style="margin-bottom:10px"> A TOP 1 DA FUSION GROUP!</div>
+    <div id="queueList"></div>
+  </aside>
+
+  <!-- app.js em módulo -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>
