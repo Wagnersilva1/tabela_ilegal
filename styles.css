@@ -15,6 +15,11 @@
 
 * { box-sizing: border-box; }
 html, body { height: 100%; }
+html, body {
+  height: auto;
+  min-height: 100%;       /* garante que preencha a tela inteira */
+}
+
 body {
   margin: 0;
   font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial;
@@ -22,16 +27,20 @@ body {
   background: radial-gradient(1200px 600px at 10% -10%, #0b3c56 0%, transparent 50%),
               radial-gradient(1000px 600px at 100% 30%, #0a3350 0%, transparent 50%),
               linear-gradient(140deg, #031320 0%, #07273a 40%, #0a3047 100%);
-  overflow: hidden;
+  overflow-x: hidden;     /* impede scroll lateral */
+  overflow-y: auto;       /* deixa rolar verticalmente */
 }
+
 body::before {
   content: "";
-  position: fixed; inset: 0;
+  position: fixed;
+  inset: 0;
   background-image:
     radial-gradient(circle at 20% 10%, rgba(255,255,255,.06) 0 12%, transparent 13%),
     radial-gradient(circle at 80% 80%, rgba(255,255,255,.04) 0 10%, transparent 11%);
   pointer-events: none;
 }
+
 
 .topbar { position: absolute; inset: 20px 24px auto 24px; display:flex; align-items:center; justify-content:space-between; }
 .brand { letter-spacing: .35em; font-weight: 800; font-size: 28px; color: var(--white-30); }
