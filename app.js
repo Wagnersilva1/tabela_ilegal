@@ -89,31 +89,31 @@ const items = [
 
   // ========== MUNIÇÃO E DESMANCHE ==========
   { name: 'Munição de G36', category: 'Munição e Desmanche',with: 2500, without: 3000, icon: 'ammo',
-    model: 'models/a_bunch_of_ammo_magazines.glb' },
+    model: 'models/10mm_ammo_box.glb' },
 
   { name: 'Munição RAM7', category: 'Munição e Desmanche',with: 2000, without: 2400, icon: 'ammo',
-    model: 'models/ammo_762.glba_bunch_of_ammo_magazines.glb' },
+    model: 'models/10mm_ammo_box.glb' },
 
   { name: 'Munição de MPX', category: 'Munição e Desmanche', with: 1250, without: 1500, icon: 'ammo',
-    model: 'models/a_bunch_of_ammo_magazines.glb' },
+    model: 'models/10mm_ammo_box.glb' },
 
   { name: 'Munição de SCARH', category: 'Munição e Desmanche', with: 1000, without: 1200, icon: 'ammo',
-    model: 'models/a_bunch_of_ammo_magazines.glb' },
+    model: 'models/10mm_ammo_box.glb' },
 
   { name: 'Munição de MTAR-21', category: 'Munição e Desmanche', with: 875, without: 1050, icon: 'ammo',
-    model: 'models/a_bunch_of_ammo_magazines.glb' },
+    model: 'models/10mm_ammo_box.glb' },
 
   { name: 'Munição de MP9', category: 'Munição e Desmanche', with: 750, without: 900, icon: 'ammo',
-    model: 'models/a_bunch_of_ammo_magazines.glb' },
+    model: 'models/10mm_ammo_box.glb' },
 
   { name: 'Munição de TEC-9', category: 'Munição e Desmanche', with: 625, without: 750, icon: 'ammo',
-    model: 'models/a_bunch_of_ammo_magazines.glb' },
+    model: 'models/10mm_ammo_box.glb' },
 
   { name: 'Munição de GLOCK', category: 'Munição e Desmanche', with: 500, without: 600, icon: 'ammo',
-    model: 'models/a_bunch_of_ammo_magazines.glb' },
+    model: 'models/10mm_ammo_box.glb' },
 
   { name: 'Munição de FIVE', category: 'Munição e Desmanche', with: 375, without: 450, icon: 'ammo',
-    model: 'models/a_bunch_of_ammo_magazines.glb' },
+    model: 'models/10mm_ammo_box.glb' },
 
   { name: 'LOCKPICK', category: 'Munição e Desmanche', with: 50000, without: 60000, icon: 'lockpick',
     model: 'models/lockpick.glb' },
